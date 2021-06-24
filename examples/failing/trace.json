@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "1",
+  "complete": true,
+  "steps": [
+    { "id": "focus-email", "input": "keyboard", "focus": "other-control" },
+    { "id": "submit-local", "input": "pointer", "mockSubmit": { "email": "sample@example.invalid" } }
+  ]
+}

@@ -1,13 +1,18 @@
 {
   "name": "form-flow-replay",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Replay keyboard and pointer form flows against saved HTML fixtures.",
   "type": "module",
+  "bin": {
+    "form-flow-replay": "./bin/form-flow-replay.mjs"
+  },
   "engines": {
     "node": ">=22"
   },
   "scripts": {
-    "test": "node --test"
+    "lint": "node --check src/index.mjs && node --check bin/form-flow-replay.mjs",
+    "test": "node --test",
+    "check": "npm run lint && npm test"
   },
   "license": "MIT",
   "repository": {
