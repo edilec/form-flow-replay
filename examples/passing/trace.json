@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1",
+  "complete": true,
+  "steps": [
+    { "id": "focus-email", "input": "keyboard", "focus": "email" },
+    { "id": "validate-empty", "input": "keyboard", "validationText": "Email is required" },
+    { "id": "submit-local", "input": "pointer", "mockSubmit": { "email": "sample@example.invalid" } }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "schemaVersion": "1",
+  "steps": [
+    { "id": "focus-email", "input": "keyboard", "expect": { "focus": "email" } },
+    { "id": "submit-local", "input": "pointer", "expect": { "mockSubmit": { "email": "sample@example.invalid" } } }
+  ]
+}
